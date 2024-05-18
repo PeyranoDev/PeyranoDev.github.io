@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Peyrano</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans text-gray-800 overflow-x-hidden">
+    <header class="bg-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-4 lg:px-8">
+            <div class="flex items-center gap-4">
+                <h1 class="text-3xl font-bold">Peyrano.</h1>
+                <div class="flex gap-4 text-lg">
+                    <a href="https://www.linkedin.com/in/ignacio-peyrano-3379762b6/" target="_blank" class="hover:text-blue-600">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:peyranoignacio@gmail.com" class="hover:text-blue-600">
+                        <i class="fas fa-at"></i>
+                    </a>
+                    <a href="https://github.com/ElNachoPey" target="_blank" class="hover:text-blue-600">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <nav class="flex gap-4">
+                <a href="#about" class="hover:text-blue-600">Sobre mí</a>
+                <a href="#skills" class="hover:text-blue-600">Habilidades</a>
+                <a href="#projects" class="hover:text-blue-600">Proyectos</a>
+                <a href="#contact" class="hover:text-blue-600">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="bg-gray-100 text-center py-20" data-aos="fade-in">
+        <div class="container mx-auto px-4 lg:px-8">
+            <h2 class="text-4xl font-bold mb-4">¡Hola, soy Nacho Peyrano!</h2>
+            <p class="text-xl mb-8">Programador Junior Full-Stack</p>
+            <a href="#contact" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Contáctame</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-20" data-aos="fade-right">
+        <div class="container mx-auto px-4 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8">Sobre mí</h2>
+            <p class="text-lg leading-relaxed">Soy un desarrollador de Rosario, Argentina. Cursando actualmente la carrera de Tecnicatura en Programación en la Universidad Austral. Me especializo en las tecnologías de creación de aplicaciones web y creación de algoritmos para manejo de datos en backend.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-gray-100 py-20" data-aos="fade-left">
+        <div class="container mx-auto px-4 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8">Habilidades</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 shadow-md rounded">
+                    <h3 class="text-xl font-bold mb-4">HTML & CSS</h3>
+                    <p class="text-lg">Experto en la creación de páginas web accesibles y bien estructuradas usando HTML5 y CSS3.</p>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded">
+                    <h3 class="text-xl font-bold mb-4">JavaScript</h3>
+                    <p class="text-lg">Sólido conocimiento de JavaScript y experiencia en el desarrollo de aplicaciones web interactivas.</p>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded">
+                    <h3 class="text-xl font-bold mb-4">React</h3>
+                    <p class="text-lg">Experiencia en el desarrollo de aplicaciones web modernas utilizando la biblioteca React.</p>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded">
+                    <h3 class="text-xl font-bold mb-4">Node.js</h3>
+                    <p class="text-lg">Capaz de construir y mantener servidores backend utilizando Node.js y Express.</p>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded">
+                    <h3 class="text-xl font-bold mb-4">Python</h3>
+                    <p class="text-lg">Capaz de crear algoritmos lógicos para el backend de aplicaciones que utilicen Python como motor.</p>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded">
+                    <h3 class="text-xl font-bold mb-4">Git & GitHub</h3>
+                    <p class="text-lg">Hábil en el uso de sistemas de control de versiones para gestionar el código y colaborar en proyectos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20" data-aos="fade-up">
+        <div class="container mx-auto px-4 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8">Proyectos</h2>
+            <div class="relative max-w-4xl mx-auto">
+                <div class="carousel flex overflow-hidden">
+                    <img src="project1.jpg" alt="Project 1" class="min-w-full transition-transform duration-500 ease-in-out">
+                    <img src="project2.jpg" alt="Project 2" class="min-w-full transition-transform duration-500 ease-in-out">
+                    <img src="project3.jpg" alt="Project 3" class="min-w-full transition-transform duration-500 ease-in-out">
+                </div>
+                <div class="absolute inset-0 flex justify-between items-center">
+                    <button id="prevBtn" class="bg-black bg-opacity-50 text-white p-2">&#10094;</button>
+                    <button id="nextBtn" class="bg-black bg-opacity-50 text-white p-2">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-gray-100 py-20" data-aos="fade-in">
+        <div class="container mx-auto px-4 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8">Contacto</h2>
+            <form action="#" class="max-w-xl mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-lg font-bold mb-2">Nombre</label>
+                    <input type="text" id="name" class="w-full p-3 border border-gray-300 rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-lg font-bold mb-2">Correo electrónico</label>
+                    <input type="email" id="email" class="w-full p-3 border border-gray-300 rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-lg font-bold mb-2">Mensaje</label>
+                    <textarea id="message" class="w-full p-3 border border-gray-300 rounded" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white py-3 px-6 rounded hover:bg-blue-700">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
